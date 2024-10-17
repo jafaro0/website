@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif; 
-    background-color: #f9f9f9; 
+    background-color: #f2f2f2; /* Light gray background */
     color: #333;
     line-height: 1.6;
 }
@@ -19,18 +19,19 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #333;
-    color: white;
+    background-color: #e0e0e0; /* Light gray */
     padding: 10px 0;
-    text-align: left;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Southeast shadow */
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1 {
-    margin-left: 20px;
-    font-size: 26px;
+.header-name {
+    font-size: 24px;
     font-weight: bold;
 }
 
@@ -45,7 +46,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -75,33 +76,58 @@ nav ul li a {
     margin-bottom: 20px;
 }
 
+.bio-text h2 .highlight {
+    text-decoration: underline;
+    text-decoration-color: #00b300; /* Green marker effect */
+    text-decoration-thickness: 6px;
+}
+
+.bio-text h3 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
 .bio-text p {
     font-size: 18px;
     color: #555;
     margin-bottom: 10px;
 }
 
+.bio-text a {
+    color: #00b300; /* Hyperlink color */
+    text-decoration: none;
+}
+
+.bio-text a:hover {
+    text-decoration: underline;
+}
+
 /* Circular Bio Image */
 .bio-image img {
-    width: 280px;  /* Equal width and height to ensure it's a perfect circle */
-    height: 280px; /* Make the height the same as width */
-    border-radius: 50%;  /* This makes it circular */
-    object-fit: cover;  /* Ensures the image fits nicely within the circle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Optional shadow for a 3D effect */
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: #e0e0e0; /* Same light gray as header */
     padding: 20px 0;
-    margin-top: 40px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Similar shadow to header */
 }
 
-footer p {
-    margin-bottom: 15px;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-email {
     font-size: 16px;
+    color: #333;
 }
 
 .social-icons {
